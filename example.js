@@ -13,14 +13,14 @@ function wbk_on_form_rendered( service ){
                + '<label class="wbk-input-label" for="custom-field1">Custom field 1</label><span class="wpcf7-form-control-wrap custom-field1"><input type="text" name="custom-field1" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required wbk-text" id="custom-field1" aria-required="true" aria-invalid="false"></span>'
                + '<label class="wbk-input-label" for="custom-field2">Custom field 2</label><span class="wpcf7-form-control-wrap custom-field2"><input type="text" name="custom-field2" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required wbk-text" id="custom-field2" aria-required="true" aria-invalid="false"></span>';
    
- 	// get array of checked services
+ 	  // get array of checked services
   	var services = [];
     jQuery( '.wbk-service-checkbox:checked').each( function(){
         services.push( jQuery( this ).val() );
     }); 
   	
-  	var form = '';
-  	// check if service 11 checked
+    var form = '';
+   // check if service 11 checked
   	if( services.includes('11') ){
         // use form 1
         form = form_1;
