@@ -20,8 +20,8 @@ function wbk_on_form_rendered( service ){
     }); 
   	
     var form = '';
-   // check if service 11 checked
-  	if( services.includes('11') ){
+    // check if service 11 checked
+    if( services.includes('11') ){
         // use form 1
         form = form_1;
     }
